@@ -1,0 +1,89 @@
+<html>
+<head>
+<style>
+#center
+{
+background-color:grey;
+width:320px;
+height:600px;
+border:3px solid blue;
+margin-top:10px;
+}
+table
+{
+height:600px;
+}
+body
+{
+background-image: url('A7.jpg');
+}
+</style>
+</head>
+<body bgcolor="lighter black"><center><h1> DONOR REGISTRATION</h1>
+<div id="center">
+<form action="donor.php" method="POST">
+<table>
+<tr>
+<td><font color="white">DONOR Name:</font></td><td><input type="text" name="D_name" required=""></td>
+</tr>
+<tr>
+<td><font color="white">Father's Name:</font></td><td><input type="text" name="F_name" required=""></td>
+</tr>
+<tr>
+<td><font color="white">Date of Birth:</font></td><td><input type="date" name="DOB" required=""></td>
+</tr>
+<tr>
+<td><font color="white">Address:</font></td><td><input type="text" name="Adress" required=""></td>
+</tr>
+<tr>
+<td><font color="white">City:</font></td><td><input type="text" name="City" required=""></td>
+</tr>
+<tr>
+<td><font color="white">Pin code:</font></td><td><input type="number" name="pin_code" required=""></td>
+</tr>
+<tr>
+<td><font color="white">State:</font></td><td><input type="text" name="state" required=""></td>
+</tr>
+<tr>
+<td><font color="white">Contact No:</font></td><td><input type="text" name="contact_no" required=""></td>
+</tr>
+<tr>
+<td><font color="white">E-mail:</font></td><td><input type="text" name="E_mail" required=""></td>
+</tr>
+<tr>
+<td><font color="white">Gender:</td><td><select name="gender" required="">
+<option>--select--</option>
+<option value="male">Male</option>
+<option value="female">Female</option>
+<option value="other">other</option>
+</select>
+</font>
+</td>
+</tr>
+
+<tr>
+<td><font color="white">Blood group</td>
+<td>
+<select name="Blood_group" required="">
+<option>--Select--</option>
+<option value="a+">A+</option>
+<option value="b+">B+</option>
+<option value="ab+">AB+</option>
+<option value="o+">O+</option>
+<option value="a-">A-</option>
+<option value="b-">B-</option>
+<option value="ab-">AB-</option>
+<option value="o-">O-</option>
+
+</select>
+</td>
+</tr>
+<tr>
+<td align="center"><button type="submit">Submit</button></td>
+<td align="center"><button type="submit">Cancel</button></td>
+</tr>
+</table>
+</form>
+</div>
+</body>
+</html>

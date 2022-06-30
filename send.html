@@ -1,0 +1,78 @@
+<html>
+<head>
+<style>
+#center
+{
+background-color:pink;
+width:320px;
+height:600px;
+border:3px solid red;
+margin-top:10px;
+}
+table
+{
+height:600px;
+}
+body
+{
+background-image: url('A6.jpg');
+}
+</style>
+</head>
+<body><center><h1><font color="blue">Send Request</h1>
+
+<div id="center">
+<form action="request.php" method="POST">
+
+<table>
+<tr>
+<td><font color="black">Name:</font></td><td><input type="text" name="name" required=""></td>
+</tr>
+<tr>
+<td><font color="black">Father's Name:</font></td><td><input type="text" name="F_name" required=""></td>
+</tr>
+<tr>
+<td><font color="black">Date of Birth:</font></td><td><input type="date" name="DOB" required=""></td>
+</tr>
+<tr>
+<td><font color="black">Contact No:</font></td><td><input type="text" name="contact_no" required=""></td>
+</tr>
+<tr>
+<td><font color="black">E-mail:</font></td><td><input type="text" name="E_mail" required=""></td>
+</tr>
+<tr>
+<td><font color="black">Gender:</td><td><select name="gender" required="">
+<option>--select--</option>
+<option value="male">Male</option>
+<option value="female">Female</option>
+<option value="other">other</option>
+</font>
+</td>
+</tr>
+<tr>
+<td><font color="black">Blood group</td>
+<td>
+<select required="" name="blood_group">
+<option>--Select--</option>
+<option value="a+">A+</option>
+<option value="b+">B+</option>
+<option value="ab+">AB+</option>
+<option value="o+">O+</option>
+<option value="a-">A-</option>
+<option value="b-">B-</option>
+<option value="ab-">AB-</option>
+<option value="o-">O-</option>
+</td>
+</tr>
+<tr>
+<td align="center"><button type="submit">button</button></td>
+<td align="center"><input type="button" value="cancel"></td>
+</tr>
+</table>
+
+</form>
+
+</div>
+
+</body>
+</html>
